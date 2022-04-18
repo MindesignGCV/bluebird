@@ -792,7 +792,7 @@ Promise.prototype._settledValue = function() {
 if (typeof Symbol !== "undefined" && Symbol.toStringTag) {
     es5.defineProperty(Promise.prototype, Symbol.toStringTag, {
         get: function () {
-            return "Object";
+            return "Promise";
         }
     });
 }
